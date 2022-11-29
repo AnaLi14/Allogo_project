@@ -56,14 +56,14 @@ class Fitness extends StatelessWidget {
                     height: 20,
                   ),
                   Text(
-                    'euuuhhhhh',
+                    'Détente entre amis',
                     style: TextStyle(
                         color: Colors.blueGrey,
                         fontSize: 20,
                         fontStyle: FontStyle.italic),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 40,
                   ),
                   Image.asset('lib/assets/sport2.jpg'),
                   SizedBox(

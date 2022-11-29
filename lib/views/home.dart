@@ -5,6 +5,7 @@ import 'package:gap/gap.dart';
 import 'package:mvp/components/menu.dart';
 import 'package:mvp/helpers/constant.dart';
 import 'package:mvp/components/menu.dart';
+import 'package:mvp/views/notif.dart';
 
 class Home extends StatefulWidget {
   static String routeName = "/home";
@@ -36,7 +37,10 @@ class _HomeState extends State<Home> {
           ),
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => Notif())));
+              },
               icon: Icon(FontAwesomeIcons.bell),
               color: Colors.white,
             ),

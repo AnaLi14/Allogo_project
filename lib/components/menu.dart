@@ -38,20 +38,67 @@ class Menu extends StatelessWidget {
             accountName: Text("Ana Li",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                   fontSize: 20,
                 )),
-            accountEmail: Text("anali@gmail.com",
+            accountEmail: Text("noemie@gmail.com",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                   fontSize: 20,
                 )),
-            currentAccountPicture: CircleAvatar(
-              radius: 10,
+            currentAccountPicture: Center(
+              widthFactor: 50,
+              child: CircleAvatar(
+                radius: 150,
+              ),
             ),
           ),
-          Gap(230),
+          ListTile(
+            title: Text("Nom:  BALLET-DUVENT",
+                style: GoogleFonts.montserrat(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200,
+                  fontSize: 20,
+                )),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text("Prénom:  Sena Muriel",
+                style: GoogleFonts.montserrat(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200,
+                  fontSize: 20,
+                )),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text("Mail:  noemie@gmail.com",
+                style: GoogleFonts.montserrat(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200,
+                  fontSize: 20,
+                )),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text("Téléphone:  97000000",
+                style: GoogleFonts.montserrat(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200,
+                  fontSize: 20,
+                )),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          Gap(20),
           Divider(
             color: Colors.black,
           ),
@@ -60,7 +107,7 @@ class Menu extends StatelessWidget {
             title: Text("Paramètre",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                   fontSize: 24,
                 )),
             leading: Icon(Icons.settings),
@@ -69,7 +116,7 @@ class Menu extends StatelessWidget {
             title: Text("Deconexion",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                   fontSize: 24,
                 )),
             leading: Icon(Icons.logout),
@@ -78,7 +125,7 @@ class Menu extends StatelessWidget {
             title: Text("A propos",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                   fontSize: 24,
                 )),
             leading: Icon(Icons.info),

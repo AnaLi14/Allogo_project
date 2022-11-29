@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,23 +11,29 @@ class Activities extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Gap(20.0),
-          Text(
-            "Traitement",
-            style: GoogleFonts.poppins(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              decoration: TextDecoration.underline,
-            ),
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20.0),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Gap(20.0),
+        Text(
+          "Traitement",
+          style: GoogleFonts.poppins(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            decoration: TextDecoration.underline,
           ),
-          // EventCard(),
-        ],
-      ),
+        ),
+        Text(
+          "Bien-Etre",
+          style: GoogleFonts.poppins(
+            fontSize: 20,
+            color: Colors.grey,
+            fontWeight: FontWeight.bold,
+            decoration: TextDecoration.underline,
+          ),
+        ),
+        EventCard()
+      ]),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mvp/auth/signup.dart';
 
 class ChatCard1 extends StatelessWidget {
@@ -8,260 +9,124 @@ class ChatCard1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Scaffold(
+      appBar: AppBar(),
+      body: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
             children: [
+              Text("Consultation Psychologique",
+                  style: GoogleFonts.poppins(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  )),
+              SizedBox(
+                height: 20,
+              ),
               Row(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(
-                    radius: 20,
-                  ),
-                  Gap(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Row(
+                      CircleAvatar(
+                        radius: 20,
+                      ),
+                      Gap(10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Dr Anne",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Gap(5),
                           Text(
-                            "Tata Anne",
+                            "Bonjour Dr.",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.black,
+                              color: Colors.grey,
+                              fontSize: 10,
                             ),
                           ),
                         ],
-                      ),
-                      Gap(5),
-                      Text(
-                        "Bonjour Dr.",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 10,
-                        ),
-                      ),
+                      )
                     ],
+                  ),
+                  Text(
+                    "17h55",
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.lightBlueAccent,
+                    ),
                   )
                 ],
               ),
-              Text(
-                "17h55",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.lightBlueAccent,
-                ),
-              )
-            ],
-          ),
-          Divider(
-            color: Colors.black38,
-          ),
-          Gap(15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+              Divider(
+                color: Colors.black38,
+              ),
+              Gap(15),
               Row(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(
-                    radius: 20,
-                  ),
-                  Gap(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Row(
+                      CircleAvatar(
+                        radius: 20,
+                      ),
+                      Gap(10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Agossou",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Gap(5),
                           Text(
-                            "Beau gar",
+                            "Merci bcp Dr",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.black,
+                              color: Colors.grey,
+                              fontSize: 10,
                             ),
                           ),
                         ],
-                      ),
-                      Gap(5),
-                      Text(
-                        "oui,exactement",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 10,
-                        ),
-                      ),
+                      )
                     ],
-                  )
-                ],
-              ),
-              Text(
-                "05h25",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.lightBlueAccent,
-                ),
-              )
-            ],
-          ),
-          Divider(
-            color: Colors.black38,
-          ),
-          Gap(15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CircleAvatar(
-                    radius: 20,
                   ),
-                  Gap(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Text(
-                            "Choco",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Gap(5),
-                      Text(
-                        "la salle de gym est bien équipée",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    "05h25",
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.lightBlueAccent,
+                    ),
                   )
                 ],
               ),
-              Text(
-                "17h55",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.lightBlueAccent,
-                ),
-              )
-            ],
-          ),
-          Divider(
-            color: Colors.black38,
-          ),
-          Gap(15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CircleAvatar(
-                    radius: 20,
-                  ),
-                  Gap(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Text(
-                            "Sena",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Gap(5),
-                      Text(
-                        "Bonjour Dr.",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
+              Divider(
+                color: Colors.black38,
               ),
-              Text(
-                "17h55",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.lightBlueAccent,
-                ),
-              )
             ],
           ),
-          Divider(
-            color: Colors.black38,
-          ),
-          Gap(15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CircleAvatar(
-                    radius: 20,
-                  ),
-                  Gap(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Text(
-                            "Agossou",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Gap(5),
-                      Text(
-                        "Merci bcp Dr",
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-              Text(
-                "05h25",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Colors.lightBlueAccent,
-                ),
-              )
-            ],
-          ),
-          Divider(
-            color: Colors.black38,
-          ),
-        ],
+        ),
       ),
     );
   }

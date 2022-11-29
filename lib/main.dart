@@ -9,11 +9,15 @@ import 'package:mvp/helpers/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:mvp/views/home_content.dart';
 import 'package:mvp/components/chat_card.dart';
-import 'package:mvp/chat/consultation.dart';
+import 'package:mvp/components/event_card.dart';
 import 'package:mvp/bien_etre/fitness.dart';
 import 'package:mvp/bien_etre/relaxation.dart';
 import 'package:mvp/components/menu.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter_launcher_icons/android.dart';
+import 'package:mvp/views/notif.dart';
+import 'package:mvp/components/card_notif.dart';
+import 'package:mvp/views/form.dart';
+//import 'package:carousel_slider/carousel_slider.dart';
 //import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 void main() {
@@ -41,11 +45,12 @@ class MyApp extends StatelessWidget {
         DiscussionView.routeName: (_) => const DiscussionView(),
         Activities.routeName: (_) => const Activities(),
         HomeContent.routeName: (_) => const HomeContent(),
-        Consultation.routeName: (_) => const Consultation(),
         Fitness.routeName: (_) => const Fitness(),
         Relaxation.routeName: (_) => const Relaxation(),
+        ChatCard1.routeName: (_) => const ChatCard1(),
         //Massage.routeName: (_) => const Massage(),
         Menu.routeName: (_) => const Menu(),
+      
       },
       debugShowCheckedModeBanner: false,
     );
